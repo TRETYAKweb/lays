@@ -1,0 +1,66 @@
+<include src="src/template/nav-menu.html"></include>
+
+<header class="page-header">
+	   <label for="lamp-js">
+        <img class="menu__lamp" src="/img/lamp-on.svg" alt="" width="132" height="238">
+      </label>
+       <div class="menu__mode mode">
+        <span class="mode__state">ON</span>
+        <input class="mode__toggler" type="checkbox" name="" id="lamp-js">
+      </div>
+    <div class="page-header__bg"></div>
+		<div class="page-header__wrapper">
+			<div class="page-header__left room">
+
+				<div class="room__wrapper">
+					<div class="shadow">
+						<img class="room__shadow room__shadow--couple" src="/img/shadows/couple.png" alt="">
+						<img class="room__shadow room__shadow--superman" src="/img/shadows/superman.png" alt="">
+						<img class="room__shadow room__shadow--alien" src="/img/shadows/ufo.png" alt="">
+					</div>
+					<img class="room__sofa" src="/img/sofa_cut.png" alt="">
+					<img class="room__people" src="/img/people_yellowShadow.png" alt="">
+				</div>
+				<div class="page-header__btn" >
+					<div class="appsForMob" id="js-show-mob-app">
+						<!-- href="viber://chat?number=0934079904" -->
+            <p class="appsForMob__title">реєструй код</p>
+						<div class="appsForMob__wrapper">
+              <a href="viber://pa?chatURI=laysukraine" id="viber-code-registration-link">
+                <img src="/img/viber.png" alt="">
+              </a>
+              <a href="tg://resolve?domain=Laysua_bot" id="telegram-code-registration-link" target="blank">
+                <img src="/img/telegram.svg" alt="">
+              </a>
+            </div>
+            <footer class="appsForMob__footer">
+              <span>або</span>
+            </footer>
+					</div>
+					<div class="btn" id="js-btn-animation">
+						<input class="btn__input" type="text" name="code" id="code-input" maxlength="11">
+						<!-- <span class="btn__text"></span> -->
+						<svg class="btn__icon" width="95" height="94" id="send-code">
+							<use xlink:href="#icon-wheel" class="animationSvg"></use>
+						</svg>
+					</div>
+          <p class="find-сode" id="show-find-modal">Як знайти код?</p>
+        </div>
+
+				<div class="room__tv tv">
+					<div class="tv__shadow"></div>
+					<img src="" alt="">
+					<div class="tv__scroll-btn">
+						Крути
+						<svg width="29" height="46">
+							<use xlink:href="#icon-arrow_down"></use>
+						</svg>
+						Вниз
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include src="src/template/instr.html"></include>
+
+	</header>

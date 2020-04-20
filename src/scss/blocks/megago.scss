@@ -1,0 +1,465 @@
+.megago {
+	background: #00a3e2;
+	height: 100vh;
+	display: flex;
+}
+
+.page-megago {
+	overflow: auto;
+	background-color: #00a3e2;
+	background-image: url(../img/megago/lenth.png);
+	background-size: 182px auto;
+	background-repeat: repeat-y;
+	// height: 100vh;
+}
+
+.js-btn {
+	position: relative;
+    display: none;
+    align-items: center;
+    width: 200px;
+    padding: 15px 0 15px 20px;
+    margin: 20px auto;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ed1d24;
+    outline: 0;
+    border: 3px solid #fcc403;
+    border-radius: 5vh;
+}
+
+.megago__text .megago__arrows {
+	display: none;
+}
+
+.megago__lenth {
+	background: url(../img/megago/lenth.png);
+	// height: 100vh;
+	min-width: 182px;
+}
+
+.megago__headers {
+	display: flex;
+	flex-direction:column;
+	padding-top: 20px;
+	// justify-content: center;
+	width: 700px;
+	color: white;
+}
+
+.megago__arrows {
+	text-align: left;
+	// height: 8vh;
+	// line-height: 8vh;
+	display: flex;
+	align-items:center;
+	font-weight: lighter;
+	margin-bottom: 70px;
+
+	a{
+		margin-left:20px;
+		font-weight: 300;
+		text-decoration: none;
+		color: white;
+	}
+
+	img {
+		margin-left: 20px;
+	}
+}
+
+.megago__camera{
+	// height: 200px;
+	text-align: center;
+	// position: relative;
+	margin-bottom: 70px;
+
+	img {
+		// position: absolute;
+		margin: auto;
+		height: 170px;
+	}
+}
+
+.megago__logo {
+	// height: 10px;
+	// position: relative;
+	text-align: center;
+	margin-bottom: 70px;
+
+	div {
+		// position: absolute;
+		display: flex;
+		align-items:center;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		justify-content:center;
+	}
+
+	img {
+		height: 150px;
+	}
+}
+
+.megago__films {
+	// height: 25px;
+	// position: relative;
+
+	img {
+		// position: absolute;
+		display: flex;
+		align-items:center;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		text-align: center;
+		justify-content:center;
+		height: 110px;
+	}
+}
+
+.megago__text {
+	display: flex;
+	flex-direction:column;
+	width: 900px;
+	padding-right: 20px;
+	color: white;
+	// position: relative;
+	text-align: center;
+	height: 100vh;
+}
+
+.megago__text .megago__logo {
+	display: none;
+}
+
+.megago__btn {
+	height: 70px;
+	padding: 0px;
+	text-align: center;
+	width: 40%;
+	border-width: 4px;
+	max-width: 270px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 20px;
+
+	svg {
+		right: 17px;
+		height: 22px;
+	}
+
+	&::after {
+		border-width: 4px;
+	}
+}
+
+.megago__watching {
+	margin-top: 50px;
+
+	img {
+		width: 80%;
+	}
+
+	h2 {
+		padding: 10px 0px;
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	div {
+		font-weight: 300;
+		font-size: 18px;
+		span {
+			font-weight: 600;
+		}
+	}
+}
+
+.circle {
+	border-radius: 50%;
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	background:#eed617;
+	border: 5px solid #c8bd31;
+	text-align: center;
+	color: #ed1d24;
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.megago__form > div {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	margin: 1vh 0px;
+}
+
+.megago__form input{
+	// height: 7vh;
+	padding: 13px 0;
+	margin-left: 20px;
+	width: 30vw;
+	border: 5px solid #eed617;
+	border-radius: 10px;
+	color: #2371b9;
+	padding-left: 10px;
+	text-align: center;
+	font-weight: 700;
+	&:focus {
+		outline: none;
+	}
+	&.input--error {
+		border: 5px solid red;
+	}
+}
+
+input::placeholder      {
+	color:#00a3e2;
+	font-weight: 600;
+}
+input:focus::placeholder      {color: transparent;}
+
+.megago__footer{
+	color: black;
+	font-size: 10px;
+	color: white;
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+.megago__link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.megago__how-use {
+	display: block;
+	margin-bottom: 15px;
+	
+	color: #eed617;
+	text-decoration: none;
+}
+
+.megago__text .megago__films {
+	display: none;
+}
+
+form.megago__form {
+}
+
+// Tablet
+@media (max-width: 1294px) {
+	.page-megago {
+		// overflow: auto;
+		// background-color: #00a3e2;
+		background-image: url(../img/megago/lenth.png);
+		background-size: 116px auto;
+		background-repeat: repeat-y;
+		// height: 100vh;
+	}
+
+	.megago__lenth {
+		min-width: 116px;
+		background-size: 100% auto;
+		background-repeat: repeat-y;
+		// background-repeat: no-repeat;
+		// background-size: 100% 100%;
+	}
+
+	.megago__form input {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 80%;
+		height: 50px;
+		font-size: 12px;
+	}
+
+	.circle {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 17px;
+	}
+
+	.megago__btn {
+    height: 50px;
+    width: 212px;
+		font-size: 14px;
+		margin-bottom: 10px;
+ }
+
+	.megago__camera img {
+    height: 150px;
+	}
+
+	.megago__logo img {
+    height: 100px;
+	}
+
+	.megago__films img {
+    height: 90px;
+	}
+
+	// .megago__watching {
+ //    margin-top: 19vh;
+	// }
+
+
+	.megago__watching img {
+    // height: 70px;
+	}
+
+	.megago__watching h2 {
+    font-size: 14px;
+    padding: 10px 0;
+	}
+
+	.megago__watching div {
+    font-size: 12px;
+    padding: 0 5px;
+	}
+
+	.megago__text {
+    width: 720px;
+	}
+}
+
+// Mobile
+@media (max-width: 768px) {
+	.page-megago {
+		background-size: 50px auto;
+	}
+	.megago__text .megago__arrows {
+		display: flex;
+		img {
+			padding: 10px;
+		}
+		a {
+			margin-left: 0;
+			padding-top: 5px;
+		}
+	}
+
+	.megago__text .megago__films {
+		display: block;
+		height: 100px;
+	}
+
+	.megago__watching {
+		margin-top: 0;
+	}
+
+	.megago__text .megago__logo {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.megago {
+		height: auto;
+		// position: relative;
+	}
+
+	.megago__headers {
+		display: none;
+	}
+
+	.megago__lenth {
+		// min-width: 50px;
+		// height: 100%;
+		// background-size: 100% auto;
+		// background-repeat: repeat-y;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+	}
+
+	.megago__text {
+		flex-grow: 1;
+		height: auto;
+		padding-top: 0;
+	}
+
+	.circle {
+    width: 40px;
+    height: 40px;
+    line-height: 31px;
+    font-size: 17px;
+	}
+
+	form.megago__form {
+		height: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.megago__form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.megago__form input {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 80%;
+		height: 40px;
+
+
+		font-size: 12px;
+	}
+
+	.megago__form input::placeholder {
+		font-size: 9px;
+	}
+
+	.megago__btn {
+    height: 50px;
+    width: 212px;
+		font-size: 14px;
+		margin-bottom: 10px;
+ }
+ .megago__footer {
+	 margin-top: 20px;
+	 padding: 0;
+	 padding-bottom: 10px;
+	 position: static;
+ }
+}
+
+@media (max-width: 768px) {
+	.page-megago {
+		// overflow: auto;
+		// background-color: #00a3e2;
+		background-image: url(../img/megago/lenth.png);
+		background-size: 50px auto;
+		background-repeat: repeat-y;
+		// height: 100vh;
+	}
+	
+	.megago__lenth {
+		min-width: 50px;
+	}
+	.megago__arrows {
+		margin-bottom: 0;
+		img {
+			width: 49px;
+		}
+	}
+}

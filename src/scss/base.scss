@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Gotham Pro', Arial, sans-serif;
+    min-width: 320px;
+
+    @media (max-aspect-ratio: 3/3) {
+    	min-width: 100%;
+    	left: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .widget-button.bottom-right {
+        display: none;
+    }
+}
+
+

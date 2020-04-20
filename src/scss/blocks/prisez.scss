@@ -1,0 +1,205 @@
+.prizes {
+  height: 100vh;
+	background-color: #fde619;
+}
+.prizes__header {
+  position: relative;
+  display: flex;
+  min-height: 40vh;
+}
+
+.prizes__chips {
+	position: absolute;
+	top: 0;
+  left: 13%;
+
+  width: 80%;
+
+  object-fit: cover;
+}
+
+.prizes__title {
+  width: 30vw;
+  height: 30vh;
+  margin: 5vh auto;
+}
+
+.prizes__list {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.prizes__item {
+	flex-grow: 1;
+	// height: 250px;
+
+  &--megogo {
+    background-color: darken(#00AA4F, 10%);
+  }
+
+  &--hollywood {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+    flex-basis: 10%;
+
+    background-color: darken(#ed1d24, 10%);
+  }
+
+  &--lg {
+    background-color: darken(#00a3e2, 10%);
+  }
+}
+
+.prizes__btn {
+  position: relative;
+  z-index: 3;
+  pointer-events: all;
+
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+  margin-bottom: 30px;
+
+	text-transform: uppercase;
+  text-decoration: none;
+	color: #fff;
+  font-size: 12px;
+  text-align: center;
+
+	background-color: #ed1d24;
+	outline: 0;
+	border: 3px solid #fcc403;
+  border-radius: 25px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid #fde619;
+    border-radius: inherit;
+  }
+
+  svg {
+    right: 20px;
+
+    display: none;
+    height: 10px;
+  }
+
+  &:hover {
+    padding-left: 27px;
+
+    text-align: left;
+    color: #ed1d24 !important;
+    font-weight: 700;
+
+    background-color: #ffffff;
+
+    svg {
+      display: block;
+
+      fill: #ED1D24;
+    }
+
+  }
+}
+
+@media (max-width: 1170px) {
+  .prizes__header {
+		height: 50vh;
+  }
+
+  .prizes__chips {
+    top: 25%;
+    left: 0;
+
+    width: 100%;
+  }
+
+	.prizes__title {
+		width: 44vw;
+		height: 39vh;
+	}
+
+	.prizes__item {
+		height: 50vh;
+	}
+}
+
+@media (max-width: 950px) {
+	.prizes {
+    height: auto;
+	}
+
+  .prizes__header {
+		display: none;
+    height: 30vh;
+    min-height: auto;
+
+    background-image: url("../img/prizes/chips-mobile.png");
+    background-size: cover;
+	}
+
+	.prizes__title {
+    width: 75vw;
+		height: auto;
+	}
+
+  .prizes__list {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .prizes__item {
+		width: 100%;
+		height: 45vh;
+
+		&--hollywood {
+			padding-top: 0;
+			flex-basis: auto;
+		}
+
+		&:nth-child(1) {
+			order: 3;
+		}
+
+		&:nth-child(2) {
+			order: 2;
+		}
+
+		&:nth-child(3) {
+			order: 2;
+		}
+  }
+
+  .prizes__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .prizes__header {
+    height: 40vh;
+  }
+
+  .prizes__list {
+    flex-direction: row;
+  }
+
+  .prizes__item {
+    height: 60vh;
+  }
+}

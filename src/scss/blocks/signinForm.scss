@@ -1,0 +1,166 @@
+.enterform {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+
+  font-weight: 700;
+
+  background-position: center;
+  background-size: 694vh 241%;
+}
+.enterform:before {
+  content: "";
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0,159,229,0.8);
+  background: rgba(35,113,185,0.8);
+}
+
+.enterform__wrapper {
+  position: relative;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 30vw;
+  min-width: 600px;
+  height: 60vh;
+  min-height: 600px;
+  margin: auto;
+
+  background: rgba(254,251,232,0.9);
+  border-radius: 20px;
+
+  @media (max-width: 768px) {
+    top: 0;
+    transform: translateY(0);
+    min-width: 100vw;
+    max-height: calc(100vh);
+    // min-height: 100vh;
+
+    border-radius: 0;
+  }
+}
+.enterform__btn {
+  width: 60%;
+  height: 60px;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    width: 80vw !important;
+  }
+}
+.enterform__btn:last-child {
+  background: #fde619;
+}
+.enterform__head {
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+  color: #ed1d24;
+  text-transform: uppercase;
+}
+.enterform input:focus {
+  border-color: #fcc403;
+}
+input {
+  padding: 2.5% 10%;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+.enterform__inp {
+  margin: 20px auto;
+
+  text-align: center;
+}
+.enterform__question {
+  width: 35%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+
+  border-bottom: 1px solid #fcc403;
+}
+.enterform__question a {
+  color: red;
+  text-decoration: none;
+}
+.enterform__btn:last-child {
+  color: red;
+}
+.enterform__btn {
+  margin-bottom: 0;
+}
+.enterform__btn:last-child {
+  color: red;
+}
+.enterform__btn:last-child svg {
+  fill: red;
+}
+.enterform__logo {
+  text-align: center;
+}
+.enterform__close {
+  // font-size: 65px;
+  /* float: right; */
+  // position: absolute;
+  // right: 10px;
+  // color: red;
+  // cursor: pointer;
+  // z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  font-weight: 100;
+  font-size: 55px;
+  color: red;
+
+  cursor: pointer;
+}
+@media (max-aspect-ratio: 3/3) {
+  .enterform {
+    // z-index: -2;
+  }
+  .enterform__wrapper {
+    min-width: 100vw;
+    // min-height: 100vh;
+
+    border-radius: 0;
+  }
+  input {
+    width: 78%;
+    max-width: 450px;
+  }
+  .enterform__btn {
+    width: 78%;
+    max-width: 450px;
+    @media (max-width: 768px) {
+      width: 80vw !important;
+    }
+    @media (max-width: 420px) {
+      font-size: 16px;
+    }
+  }
+}

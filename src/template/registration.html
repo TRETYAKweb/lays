@@ -1,0 +1,50 @@
+<section class="registration">
+	<div class="registration__wrapper" onclick="event.stopPropagation()">
+		<form action="">
+			<div class="registration__close">&times;</div>
+			<div class="registration__logo"><img src="/img/logo.png" alt=""></div>
+			<h2 class="registration__head">РЕЄСТРАЦІЯ</h2>
+				<div class="registration__inp"><input type="text" name="name" class="input input--yellow" placeholder="ІМ'Я"></div>
+				<div class="registration__inp"><input type="tel" name="phone" class="input input--yellow js-phone-mask" placeholder="+38 (XXX) XXX-XX-XX"></div>
+				<div class="registration__inp"><input type="text" name="birthdate" class="input input--yellow js-birthday-mask" placeholder="ДАТА НАРОДЖЕННЯ" data-mask="00-00-0000"></div>
+				<div class="registration__inp"><input type="email" name="email" class="input input--yellow" placeholder="E-MAIL"></div>
+				<div class="registration__inp"><input type="password" name="password" class="input input--yellow" placeholder="ПАРОЛЬ"></div>
+				<div class="registration__agreement">
+					 <label class="label">
+    					<input  class="label__checkbox" name="rules2" type="checkbox">
+    					<span class="label__text">
+    					  <span class="label__check">
+    					    <i class="fa fa-check icon"></i>
+    					  </span>
+   						</span>
+ 					 </label>
+ 					 <div class="registration__agreementText" >
+ 					 	Я погоджуюся з <a href="/rules.pdf" target="_blank" class="underline">Офіційними правилами</a> та даю згоду на обробку персональних данних
+ 					 </div>
+				</div>
+				<div class="registration__agreement">
+					 <label class="label">
+    					<input  class="label__checkbox" name="rules" type="checkbox">
+    					<span class="label__text">
+    					  <span class="label__check">
+    					    <i class="fa fa-check icon"></i>
+    					  </span>
+   						</span>
+ 					 </label>
+ 					 <div class="registration__agreementText2" >
+ 					 	Я погоджуюся з <a href="/terms-of-use.pdf" target="_blank" class="underline">Умовами використання</a>
+ 					 </div>
+				</div>
+
+			<div class="g-recaptcha js-reg-captcha" data-sitekey="6Lebq4kUAAAAANm0B8bVipY2a_wUYxHl8ughPAv7"></div>
+
+			<button class="registration__btn button">ЗАРЕЄСТРУВАТИСЯ
+				<svg class="hollywood__icon-triangle">
+					<use xlink:href="#icon-triangle"></use>
+				</svg>
+			</button>
+		</form>
+	</div>
+</section>
+<script>
+</script>
